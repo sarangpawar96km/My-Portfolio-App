@@ -60,7 +60,7 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/sarangpawar96km/my-react-portfolio.git
+   git clone https://github.com/sarangpawar96km/My-Portfolio-App.git
 2. Navigate to the project directory
    ```sh
    cd my-react-portfolio
