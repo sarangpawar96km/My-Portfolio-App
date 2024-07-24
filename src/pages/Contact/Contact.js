@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import "./Contact.css";
 import { FaLinkedin, FaGithub, FaInstagramSquare } from "react-icons/fa";
-// import Bounce from "react-reveal/Bounce";
-// import Zoom from "react-reveal/Zoom";
-// import Fade from "react-reveal/Fade";
+import {Bounce} from "react-swift-reveal";
+import {Zoom} from "react-swift-reveal";
+import {Fade} from "react-swift-reveal";
 const Contact = () => {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
@@ -19,13 +19,13 @@ const Contact = () => {
     <>
       <div className="contact" id="contact">
         <div className="contact-container">
-          {/* <Bounce> */}
+          <Bounce>
             <div className="contact-heading">
               <h1>Contact</h1>
             </div>
-          {/* </Bounce> */}
+          </Bounce>
           <div className="contact-details">
-            {/* <Zoom> */}
+            <Zoom>
               <div className="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30263.277202792546!2d73.82169990112303!3d18.532984574355336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0791d785177%3A0x20d86a81ca743dc8!2sShivajinagar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1687342465834!5m2!1sen!2sin"
@@ -36,8 +36,8 @@ const Contact = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-            {/* </Zoom> */}
-            {/* <Fade right> */}
+            </Zoom>
+            <Fade right>
               <div className="form">
                 <div className="social-media">
                   <h2>
@@ -104,7 +104,7 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
-            {/* </Fade> */}
+            </Fade>
           </div>
         </div>
       </div>

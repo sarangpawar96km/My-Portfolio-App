@@ -9,18 +9,18 @@ import { IoSchool } from "react-icons/io5";
 import { BiSolidSchool } from "react-icons/bi";
 import { FaSchool } from "react-icons/fa";
 import { useTheme } from "../../context/ThemeContext";
-// import Zoom from "react-reveal/Zoom";
+import {Zoom} from "react-swift-reveal";
 const Education = () => {
   const [theme] = useTheme();
   return (
     <>
       <div className="education" id="education">
         <div className="education-container">
-          {/* <Zoom> */}
+          <Zoom>
             <div className="education-heading">
               <h1>Education Details</h1>
             </div>
-          {/* </Zoom> */}
+          </Zoom>
           <div className="education-details-container">
             <VerticalTimeline lineColor="#3b8ff3">
               <VerticalTimelineElement

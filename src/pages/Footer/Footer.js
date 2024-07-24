@@ -1,17 +1,17 @@
 import React from "react";
 import "./Footer.css";
-// import Tada from "react-reveal/Tada";
+import {Tada} from "react-swift-reveal";
 const Footer = () => {
   return (
     <>
       <div className="footer">
         <div className="footer-container">
           <div className="footer-heading">
-            {/* <Tada> */}
+            <Tada>
               <h4>
                 Made with ❤ Sarang Pawar &copy; {new Date().getFullYear()}
               </h4>
-            {/* </Tada> */}
+            </Tada>
           </div>
         </div>
       </div>

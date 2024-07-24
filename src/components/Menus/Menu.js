@@ -11,20 +11,20 @@ import {
   FcVideoProjector,
 } from "react-icons/fc";
 import profile from "../../assets/Images/photo_1.png";
-// import Zoom from "react-reveal/Zoom";
-// import Fade from "react-reveal/Fade";
+import { Zoom } from "react-swift-reveal";
+import { Fade } from "react-swift-reveal";
 const Menu = ({ toogle }) => {
   return (
     <>
       {toogle ? (
         <>
-          {/* <Zoom> */}
+          <Zoom>
             <div className="navbar-profile-pic">
               <img src={profile} alt="profile-pic" />
             </div>
-          {/* </Zoom> */}
+          </Zoom>
           <div className="nav-items">
-            {/* <Fade left> */}
+            <Fade left>
               <div className="nav-item">
                 <div className="nav-link">
                   <Link
@@ -111,11 +111,11 @@ const Menu = ({ toogle }) => {
                   </Link>
                 </div>
               </div>
-            {/* </Fade> */}
+            </Fade>
           </div>
         </>
       ) : (
-        // <Fade left>
+        <Fade left>
           <div className="nav-item nav-linkcenter">
             <div className="nav-link">
               <Link
@@ -204,7 +204,7 @@ const Menu = ({ toogle }) => {
               </Link>
             </div>
           </div>
-        // </Fade>
+        </Fade>
       )}
     </>
   );

@@ -6,7 +6,7 @@ import {
 } from "react-icons/md";
 import "./Layout.css";
 import Menu from "../Menus/Menu";
-// import Fade from "react-reveal/Fade";
+import { Fade } from "react-swift-reveal";
 const Layout = () => {
   const [toogle, setToogle] = useState(true);
 
@@ -17,7 +17,7 @@ const Layout = () => {
     <>
       <div className="sidebar-section">
         <div className={toogle ? "sidebar-toggle sidebar" : "sidebar"}>
-          {/* <Fade right> */}
+          <Fade right>
             <div className="sidebar-toggle-icons">
               <p onClick={handletoogle}>
                 {toogle ? (
@@ -27,7 +27,7 @@ const Layout = () => {
                 )}
               </p>
             </div>
-          {/* </Fade> */}
+          </Fade>
           <Menu toogle={toogle} />
         </div>
 

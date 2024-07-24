@@ -9,21 +9,21 @@ import TodoList from "../../assets/Images/todolist.png";
 import Ecom from "../../assets/Images/ecom.png";
 import Stopwatch from "../../assets/Images/stopwatch_1.png";
 import "./Project.css";
-// import Jump from "react-reveal/Jump";
-// import Fade from "react-reveal/Fade";
+import {Jump} from "react-swift-reveal";
+import {Fade} from "react-swift-reveal";
 const Project = () => {
   return (
     <>
       <div className="projects" id="project">
         <div className="projects-container">
-          {/* <Jump> */}
+          <Jump>
             <div className="projects-heading">
               <h1>Projects</h1>
             </div>
             <p>👉Check out my projects and their source code.👈</p>
-          {/* </Jump> */}
+          </Jump>
           <div className="projects-card-container">
-            {/* <Fade left> */}
+            <Fade left>
               <div className="project-card">
                 <span className="project-badge">Full Stack</span>
                 <div className="project-image">
@@ -96,9 +96,9 @@ const Project = () => {
                   </a>
                 </div>
               </div>
-            {/* </Fade> */}
+            </Fade>
 
-            {/* <Fade right> */}
+            <Fade right>
               <div className="project-card">
                 <span className="project-badge">Android Full Stack</span>
                 <div className="project-image">
@@ -167,9 +167,9 @@ const Project = () => {
                   </a>
                 </div>
               </div>
-            {/* </Fade> */}
+            </Fade>
 
-            {/* <Fade left> */}
+            <Fade left>
               <div className="project-card">
                 <span className="project-badge">Front End</span>
                 <div className="project-image">
@@ -238,7 +238,7 @@ const Project = () => {
                   </a>
                 </div>
               </div>
-            {/* </Fade> */}
+            </Fade>
           </div>
         </div>
       </div>

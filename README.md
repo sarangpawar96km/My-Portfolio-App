@@ -46,6 +46,7 @@ Check out the live demo of my portfolio [here](#).
 - Responsive Design Techniques
 - React Router
 - react-vertical-timeline
+- react-swift-reveal
 
 ## Getting Started
 

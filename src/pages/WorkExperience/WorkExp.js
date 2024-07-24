@@ -7,18 +7,18 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { MdDeveloperMode } from "react-icons/md";
 import { useTheme } from "../../context/ThemeContext";
-// import Swing from "react-reveal/Swing";
+import {Swing} from "react-swift-reveal";
 const WorkExp = () => {
   const [theme] = useTheme();
   return (
     <>
       <div className="workexperience" id="workexp">
         <div className="workexperience-container">
-          {/* <Swing> */}
+          <Swing>
             <div className="workexperience-heading">
               <h1>Work Experience</h1>
             </div>
-          {/* </Swing> */}
+          </Swing>
           <div className="workexperience-details-container">
             <VerticalTimeline lineColor="#3b8ff3">
               <VerticalTimelineElement
