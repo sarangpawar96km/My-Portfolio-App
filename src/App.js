@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import ScrollToTop from "react-scroll-to-top";
+import Layout from "./components/layouts/Layout";
+import About from "./pages/About/About";
+import TechStack from "./pages/TechStack/TechStack";
+import Project from "./pages/Projects/Project";
+import Education from "./pages/Education/Education";
+import WorkExp from "./pages/WorkExperience/WorkExp";
+import Contact from "./pages/Contact/Contact";
+import Footer from "./pages/Footer/Footer";
+import { useTheme } from "./context/ThemeContext";
+import MoileNav from "./components/MobileNav/MoileNav";
 function App() {
+  const [theme] = useTheme();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div id={theme}>
+        <MoileNav />
+        <Layout />
+        <About />
+        <Education />
+        <TechStack />
+        <Project />
+        <WorkExp />
+        <Contact />
+        <Footer />
+      </div>
+      <ScrollToTop
+        smooth
+        color="#fff"
+        title="Go To Top"
+        style={{ borderRadius: "50%", backgroundColor: "#f159a2" }}
+      />
+    </>
   );
 }
 
